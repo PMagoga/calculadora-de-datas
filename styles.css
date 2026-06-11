@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #e36bb2;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  max-height: 450px;
+  margin: 15px auto;
+}
+button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#resultado {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
