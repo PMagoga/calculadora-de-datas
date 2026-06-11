@@ -8,5 +8,10 @@
   },
   "action": {
     "default_popup": "index.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "calculadora-sgt-ana@magoga.extensions"
+    }
   }
 }
