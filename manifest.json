@@ -12,6 +12,9 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "calculadora-sgt-ana@magoga.extensions"
-    }
+    },
+    "data_collection_permissions": {
+        "is_opt_in_required": false
+      }
   }
 }
