@@ -14,6 +14,16 @@ O projeto foi construído utilizando as tecnologias web mais recentes, destacand
 
 ---
 
+## 🛠️ Requisitos de Ambiente e Sistema
+
+Para construir (dar build) nesta extensão a partir do código-fonte, o ambiente deve atender aos seguintes requisitos:
+
+- **Sistema Operacional:** Linux (Ubuntu/Debian/WSL), macOS ou Windows 10/11.
+- **Ambiente de Compilação:** Node.js (versão mínima recomendada: `v20.0.0` ou superior).
+- **Gerenciador de Pacotes:** NPM (geralmente instalado junto com o Node.js).
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5** – Estruturação da interface do pop-up.
@@ -26,18 +36,47 @@ O projeto foi construído utilizando as tecnologias web mais recentes, destacand
 ## 📂 Estrutura do Projeto
 
 ```text
-├── manifest.json       # Configurações e permissões da extensão (Manifest V3)
-├── index.html          # Interface visual do pop-up da calculadora
-├── index.js            # Lógica de cálculo utilizando a API Temporal
-├── styles.css          # Estilização visual da extensão
-└── calculadora.png     # Ícone de exibição na barra do navegador (48x48)
+├── src/
+│   ├── calculadora.png     # Ícone original da extensão
+│   ├── index.html          # Interface visual do pop-up
+│   ├── index.js            # Lógica de cálculo utilizando a API Temporal
+│   ├── manifest.json       # Configurações do Manifest V3 da extensão
+│   └── styles.css          # Estilização visual da extensão
+├── package.json            # Definição de scripts e dependências (Vite)
+├── vite.config.js          # Script técnico de compilação e automação do build
+└── README.md               # Este arquivo com instruções de reprodução
 ```
 
 ---
+
+## 🚀 Instruções de Construção Passo a Passo (Build)
+
+Siga os passos abaixo para gerar uma cópia exata do código de produção da extensão:
+
+### 1. Instalar as Dependências
+
+Abra o terminal na raiz deste projeto (onde o arquivo `package.json` está localizado) e execute o comando abaixo para instalar a ferramenta de build (Vite):
+
+```bash
+npm install
+```
+
+### 2. Executar o script de Compilação
+
+```bash
+npm run build
+```
+
+### 3. Resultado da Compilação
+
+Após a execução do script, uma nova pasta chamada dist será criada automaticamente na raiz do projeto.
+
+O script de build também utiliza um gatilho personalizado no vite.config.js que copia automaticamente o arquivo manifest.json e o ícone calculadora.png para dentro da pasta dist/.
+
+O conteúdo gerado dentro da pasta dist/ é a cópia exata do código de produção da extensão pronto para ser zipado e instalado.
 
 ## 📜 Licença
 
 Este projeto está sob a licença MIT.
 
 Desenvolvido com 💻 e JS Moderno.
-# calculadora-de-datas

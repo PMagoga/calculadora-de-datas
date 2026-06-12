@@ -1,0 +1,26 @@
+{
+  "name": "calculadora_datas",
+  "version": "1.0.0",
+  "description": "Uma extensão nativa, leve e moderna para o **Mozilla Firefox** desenvolvida para calcular com precisão a diferença exata em **anos, meses e dias** entre duas datas escolhidas.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMagoga/calculadora-de-datas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PMagoga/calculadora-de-datas/issues"
+  },
+  "homepage": "https://github.com/PMagoga/calculadora-de-datas#readme",
+  "devDependencies": {
+    "vite": "^8.0.16"
+  }
+}
